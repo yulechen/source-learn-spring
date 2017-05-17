@@ -6,4 +6,13 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>spring-xml</artifactId>
+  
+   <dependencies>
+       <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${dep.spring.version}</version>
+      </dependency>
+   </dependencies>
+   
 </project>
