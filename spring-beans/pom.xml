@@ -13,5 +13,10 @@
         <artifactId>spring-beans</artifactId>
         <version>${dep.spring.version}</version>
       </dependency>
+       <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${dep.spring.version}</version>
+      </dependency>
    </dependencies>
 </project>

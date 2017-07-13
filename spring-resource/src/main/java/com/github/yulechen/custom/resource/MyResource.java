@@ -8,8 +8,8 @@ import java.net.URL;
 
 import org.springframework.core.io.Resource;
 
+
 public class MyResource implements Resource {
-    
 
     public InputStream getInputStream() throws IOException {
         // TODO Auto-generated method stub
@@ -30,13 +30,11 @@ public class MyResource implements Resource {
 
 
     public boolean isOpen() {
-        // TODO Auto-generated method stub
         return false;
     }
 
 
     public URL getURL() throws IOException {
-        // TODO Auto-generated method stub
         return null;
     }
 
