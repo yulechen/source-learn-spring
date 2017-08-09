@@ -15,7 +15,12 @@ public class Comm implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        sayHelloService.sayHello();
+        if (null != sayHelloService) {
+            sayHelloService.sayHello();
+        }
+        else {
+            System.out.println("sayHelloService is null");
+        }
     }
 
 }
