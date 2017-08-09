@@ -30,6 +30,10 @@
 					<artifactId>log4j-over-slf4j</artifactId>
 					<groupId>org.slf4j</groupId>
 				</exclusion>
+				<exclusion>
+					<artifactId>logback-classic</artifactId>
+					<groupId>ch.qos.logback</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		
@@ -78,6 +82,7 @@
 		</dependency>
 		
 	<!-- spring web -->	
+	<!--  
 	  <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -90,8 +95,13 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 				</exclusion>
+				<exclusion>
+					<artifactId>tomcat-embed-el</artifactId>
+					<groupId>org.apache.tomcat.embed</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
+		-->
    </dependencies>
 	<build>
 		<plugins>
@@ -102,5 +112,4 @@
 		</plugins>
 	</build>
 	
-	<packaging>war</packaging>
 </project>
